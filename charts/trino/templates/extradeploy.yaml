@@ -1,4 +1,0 @@
-{{- range .Values.extraDeploy }}
----
-{{ include "trino.extradeploy.render" (dict "value" . "context" $) }}
-{{- end }}
